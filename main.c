@@ -1,14 +1,15 @@
 #include <stdio.h>
 
 int main() {
-  int n;
-  printf("nhap so nguyen: ");
-  scanf("%d",&n);
+  int  \(n\);
+  
+  scanf("%d",& \(n\));
+  
   if (n%2==0){
-    printf("la so chan");
+    printf("CHAN");
   }
   else{
-    printf("la so le");
+    printf("LE");
   }
   return 0;
 }
