@@ -1,6 +1,14 @@
 #include <stdio.h>
 
 int main() {
-  scanf
+  int n;
+  printf("nhap so nguyen: ");
+  scanf("%d",n);
+  if (n%2==0){
+    printf("la so chan");
+  }
+  else{
+    printf("la so le");
+  }
   return 0;
 }
