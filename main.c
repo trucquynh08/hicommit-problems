@@ -9,7 +9,7 @@ int main(){
 	if(distance<=0&&order_value<0){
 		printf(" INVALID");//k hop le
 	}
-	else if (distance<=15&&order_value>=500000){
+	if (distance<=15&&order_value>=500000){
 		printf("0");
 	}
 	
