@@ -12,7 +12,7 @@ int main(){
 	if(t>25&&t<35){
 		printf("NONG");
 	}
-	if(t<35){
+	if(t>35){
 		printf("RAT_NONG");
 	}
 	
