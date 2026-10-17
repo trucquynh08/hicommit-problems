@@ -1,19 +1,19 @@
 #include <stdio.h>
 int main(){
-	float  distance,order_value;
+	int  distance,order_value;
 	
-	scanf("%f\t",&distance);
+	scanf("%d\t",&distance);//kc
 	
-	scanf("%f",&order_value); 
+	scanf("%d",&order_value); //gtdh
 	
-	if(distance<=0&&order_value<0){
-		printf(" INVALID");
+	if(distance<=0||order_value<0){
+		printf(" INVALID");//k hop le
 	}
 	if (distance<=15&&order_value>=500000){
-		printf("0000");
+		printf("0");
 	}
 	
-	if(distance>=1&&distance<=5){
+	else if (distance>=1&&distance<=5){
 		printf("15000");
 	}
 	else if(distance>=6&&distance<=15){
