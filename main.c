@@ -2,15 +2,15 @@
 int main(){
 	float  distance,order_value;
 	
-	scanf("%f\t",&distance);//kc
+	scanf("%f\t",&distance);
 	
-	scanf("%f",&order_value); //gtdh
+	scanf("%f",&order_value); 
 	
 	if(distance<=0&&order_value<0){
-		printf(" INVALID");//k hop le
+		printf(" INVALID");
 	}
 	if (distance<=15&&order_value>=500000){
-		printf("0");
+		printf("0000");
 	}
 	
 	if(distance>=1&&distance<=5){
