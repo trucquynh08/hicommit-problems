@@ -2,20 +2,19 @@
 int main(){
 	int t;
 	scanf("%d",&t);
-	if(t<15){
+	
+	if (t<15){
 		printf("LANH");
 	}
-	if(15<t&&t<25){
+	if(t>15&&t<25){
 		printf("MAT");
 	}
-	else if(25<t&&t<35){
+	if(t>25&&t<35){
 		printf("NONG");
 	}
-	else{
-		printf("RAT NONG");
+	if(t<35){
+		printf("RAT_NONG");
 	}
-	
-
 	
 	return 0;
 }
