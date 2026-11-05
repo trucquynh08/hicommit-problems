@@ -39,29 +39,29 @@ int main() {
   }
 
 
-  if(hocluc=Xuat_sac&&renluyen=Xuat_sac){
+  if(hocluc==Xuat_sac&&renluyen==Xuat_sac){
     printf("HOC_BONG_XUAT_SAC");
   }
   if(hocluc=Gioi){
-    if(renluyen=Xuat_sac||renluyen=Tot){
+    if(renluyen==Xuat_sac||renluyen==Tot){
       printf("HOC_BONG_GIOI");
     }
-    if(renluyen=Kha){
+    if(renluyen==Kha){
       printf("HOC_BONG_KHA");
     }
   }
 
   
-  if(hocluc=Xuat_sac){
-    if(renluyen=Tot){
+  if(hocluc==Xuat_sac){
+    if(renluyen==Tot){
       printf("HOC_BONG_GIOI");
     }
-    if(renluyen=Kha){
+    if(renluyen==Kha){
       printf("HOC_BONG_KHA");
     }
   }
 
-  if(hocluc=Kha){
+  if(hocluc==Kha){
     printf("HOC_BONG_KHA");
   }
   
