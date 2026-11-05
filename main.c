@@ -2,7 +2,7 @@
 
 int main() {
   float dtb,drl;
-  char hocluc,renluyen;
+  int hocluc,renluyen;
   scanf("%f",&dtb);
   scanf("%f",&drl);
 
@@ -11,63 +11,63 @@ int main() {
 
   
   if(dtb>=9.0){
-    hocluc="Xuat_sac";
+    hocluc=1;
   }
   else if(8.0<=dtb<9.0){
-    hocluc="Gioi";
+    hocluc=2;
   }
   else if(7.0<=dtb<8.0){
-    hocluc="Kha";
+    hocluc=3;
   }
   else{
-    hocluc="Khong_dat";
+    hocluc=0;
   }
 
   
   if(drl>=90){
-    renluyen="Xuat_sac";
+    renluyen=1;
   }
   else if(80<=drl<90){
-    renluyen="Tot";
+    renluyen=2;
   }
   else if(70<=drl<80){
-    renluyen="Kha";
+    renluyen=3;
   }
   else{
-    renluyen="Khong_dat";
+    renluyen=0;
   }
 
 
-  if(hocluc=="Xuat_sac"&&renluyen=="Xuat_sac"){
+  if(hocluc==1&&renluyen==1){
     printf("HOC_BONG_XUAT_SAC");
   }
-  if(hocluc=="Gioi"){
-    if(renluyen=="Xuat_sac"||renluyen=="Tot"){
+  if(hocluc==2){
+    if(renluyen==1||renluyen==2){
       printf("HOC_BONG_GIOI");
     }
-    else if(renluyen=="Kha"){
+    else if(renluyen==3){
       printf("HOC_BONG_KHA");
     }
   }
 
   
-  if(hocluc=="Xuat_sac"){
-    if(renluyen=="Tot"){
+  if(hocluc==1){
+    if(renluyen==2){
       printf("HOC_BONG_GIOI");
     }
-    if(renluyen=="Kha"){
+    if(renluyen==3){
         printf("HOC_BONG_KHA");
     }
   }
   
-  if(hocluc=="Kha"){
-    if(renluyen=="Xuat_sac"||renluyen=="Tot"||renluyen=="Kha"){
+  if(hocluc==3){
+    if(renluyen==1||renluyen==2||renluyen==3){
       printf("HOC_BONG_KHA");
     }
   }
   
 
-  if(hocluc=="Khong_dat"||renluyen=="Khong_dat"){
+  if(hocluc==0||renluyen==0){
     printf("KHONG_DAT");
   }
 
