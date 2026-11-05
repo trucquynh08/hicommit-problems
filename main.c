@@ -65,7 +65,9 @@ int main() {
   if(hocluc==Kha){
     printf("HOC_BONG_KHA");
   }
-  
+  else{
+    printf("KHONG_DAT");
+  }
 
 
   return 0;
