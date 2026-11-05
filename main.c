@@ -43,7 +43,7 @@ int main() {
     printf("HOC_BONG_XUAT_SAC");
   }
   if(hocluc=Gioi){
-    if(renluyen=Tot||renluyen=Xuat_sac){
+    if(renluyen=Xuat_sac||renluyen=Tot){
       printf("HOC_BONG_GIOI");
     }
     if(renluyen=Kha){
@@ -52,7 +52,7 @@ int main() {
   }
 
   
-  if(hocluc=XUat_sac){
+  if(hocluc=Xuat_sac){
     if(renluyen=Tot){
       printf("HOC_BONG_GIOI");
     }
