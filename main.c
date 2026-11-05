@@ -65,10 +65,11 @@ int main() {
   if(hocluc==Kha){
     printf("HOC_BONG_KHA");
   }
-  else{
+  
+
+  if(hocluc==Khong_dat&&renluyen==Khong_dat){
     printf("KHONG_DAT");
   }
-
 
   return 0;
 }
