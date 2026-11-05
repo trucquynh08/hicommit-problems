@@ -57,9 +57,10 @@ int main() {
       printf("HOC_BONG_GIOI");
     }
     if(renluyen==Kha){
-      printf("HOC_BONG_KHA");
+      if(renluyen==Xuat_sac||renluyen=Tot||renluyen==Kha){
+        printf("HOC_BONG_KHA");
+      }
     }
-  }
 
   
   if(hocluc==Kha){
