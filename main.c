@@ -11,10 +11,10 @@ int main() {
 
 
   
-  if(dtb>=90){
+  if(dtb>=9.0){
     hocluc=Xuat_sac;
   }
-  else if(8.0<=dtb<9){
+  else if(8.0<=dtb<9.0){
     hocluc=Gioi;
   }
   else if(7.0<=dtb<8.0){
@@ -31,7 +31,7 @@ int main() {
   else if(80<=drl<90){
     renluyen=Tot;
   }
-  else if(70<=drl,80){
+  else if(70<=drl<80){
     renluyen=Kha;
   }
   else{
