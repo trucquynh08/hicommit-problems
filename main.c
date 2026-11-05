@@ -5,11 +5,7 @@ int main() {
   int hocluc=0,renluyen=0;
   scanf("%f",&dtb);
   scanf("%f",&drl);
-
-  
-
-
-  
+ 
   if(dtb>=9.0){
     hocluc=1;
   }
@@ -41,33 +37,14 @@ int main() {
   if(hocluc==1&&renluyen==1){
     printf("HOC_BONG_XUAT_SAC");
   }
-  else if(hocluc==2){
-    if(renluyen==1||renluyen==2){
+  else if((hocluc==2)&&(renluyen==1||renluyen==2)){
       printf("HOC_BONG_GIOI");
-    }
-    else if(renluyen==3){
+  }else if(((renluyen==3)&&(hocluc==1||hocluc==2||hocluc==3))||
+          (hocluc==3&&(renluyen==1||renluyen==2||renluyen==3))
+          ){
       printf("HOC_BONG_KHA");
     }
-  }
-
-  
-  else if(hocluc==1){
-    if(renluyen==2){
-      printf("HOC_BONG_GIOI");
-    }
-    else if(renluyen==3){
-        printf("HOC_BONG_KHA");
-    }
-  }
-  
-  else if(hocluc==3){
-    if(renluyen==1||renluyen==2||renluyen==3){
-      printf("HOC_BONG_KHA");
-    }
-  }
-  
-
-  else{
+   else{
     printf("KHONG_DAT");
   }
 
