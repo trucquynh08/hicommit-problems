@@ -2,7 +2,7 @@
 
 int main() {
   float dtb,drl;
-  int hocluc,renluyen;
+  int hocluc=0,renluyen=0;
   scanf("%f",&dtb);
   scanf("%f",&drl);
 
@@ -41,7 +41,7 @@ int main() {
   if(hocluc==1&&renluyen==1){
     printf("HOC_BONG_XUAT_SAC");
   }
-  if(hocluc==2){
+  else if(hocluc==2){
     if(renluyen==1||renluyen==2){
       printf("HOC_BONG_GIOI");
     }
@@ -51,23 +51,23 @@ int main() {
   }
 
   
-  if(hocluc==1){
+  else if(hocluc==1){
     if(renluyen==2){
       printf("HOC_BONG_GIOI");
     }
-    if(renluyen==3){
+    else if(renluyen==3){
         printf("HOC_BONG_KHA");
     }
   }
   
-  if(hocluc==3){
+  else if(hocluc==3){
     if(renluyen==1||renluyen==2||renluyen==3){
       printf("HOC_BONG_KHA");
     }
   }
   
 
-  if(hocluc==0||renluyen==0){
+  else{
     printf("KHONG_DAT");
   }
 
