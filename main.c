@@ -3,6 +3,7 @@
 int main() {
   float dtb,drl;
   char hocluc,renluyen;
+  char Xuat_sac,Gioi,Kha,Khong_dat,Tot;
   scanf("%f",&dtb);
   scanf("%f",&drl);
 
@@ -23,6 +24,7 @@ int main() {
     hocluc=Khong_dat;
   }
 
+  
   if(drl>=90){
     renluyen=Xuat_sac;
   }
