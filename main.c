@@ -13,10 +13,10 @@ int main() {
   if(dtb>=9.0){
     hocluc=1;
   }
-  else if(8.0<=dtb<9.0){
+  else if(8.0<=dtb){
     hocluc=2;
   }
-  else if(7.0<=dtb<8.0){
+  else if(7.0<=dtb){
     hocluc=3;
   }
   else{
@@ -27,10 +27,10 @@ int main() {
   if(drl>=90){
     renluyen=1;
   }
-  else if(80<=drl<90){
+  else if(80<=drl){
     renluyen=2;
   }
-  else if(70<=drl<80){
+  else if(70<=drl){
     renluyen=3;
   }
   else{
