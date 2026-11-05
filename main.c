@@ -19,13 +19,13 @@ int main() {
   }
 
   
-  if(drl>=90){
+  if(drl>=90.0){
     renluyen=1;
   }
-  else if(80<=drl){
+  else if(80.0<=drl){
     renluyen=2;
   }
-  else if(70<=drl){
+  else if(70.0<=drl){
     renluyen=3;
   }
   else{
@@ -33,17 +33,21 @@ int main() {
   }
 
 
-  if(hocluc==1&&renluyen==1){
+  if(hocluc==1&&renluyen==1)
+  {
     printf("HOC_BONG_XUAT_SAC");
   }
-  else if(((hocluc==2)&&(renluyen==1))||((hocluc==2)&&(renluyen==2))){
+  else if(hocluc==2&&(renluyen==2||renluyen==1))
+  {
       printf("HOC_BONG_GIOI");
-  }else if(((renluyen==3)&&(hocluc==1||hocluc==2||hocluc==3))||
+  }
+  else if((renluyen==3&&(hocluc==1||hocluc==2||hocluc==3))||
           (hocluc==3&&(renluyen==1||renluyen==2||renluyen==3))
-          ){
+          )
+  {
       printf("HOC_BONG_KHA");
-    }
-   else{
+  }
+  else{
     printf("KHONG_DAT");
   }
 
