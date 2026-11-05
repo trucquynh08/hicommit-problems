@@ -68,7 +68,7 @@ int main() {
   }
   
 
-  if(hocluc==Khong_dat&&renluyen==Khong_dat){
+  if(hocluc==Khong_dat||renluyen==Khong_dat){
     printf("KHONG_DAT");
   }
 
